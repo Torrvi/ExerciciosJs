@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header><h1>Muito teste</h1></header>
+    <main> 
+        <div id="area">
+            <h1>Sistema de multas</h1>
+            Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/H
+            <input type="button" value="Verificar" onclick="calcular()">   
+            <div name="res" id="res"></div>  
+            <h1>Moradia</h1>
+            Em que pais vc mora? <input type="text" name="mora" id="mora">
+            <input type="button" value="Verificar" onclick="confirmar()"> 
+            <div name="resu" id="resu"></div> 
+
+        </div>
+    </main>
+    <script>
+        function calcular(){
+                   var txtv = window.document.querySelector('input#txtvel')
+                   var res = window.document.querySelector('div#res')
+                   var vel = Number(txtv.value)
+            res.innerHTML = `<p> Sua velociade é de <strong>${vel}Km/H</strong></p>`
+            if(vel> 60){
+                res.innerHTML += `<p>vc foi multado</p>`
+            }
+            res.innerHTML += `<p>dirija com cuidado</p>`
+        }
+
+        function confirmar(){
+            var pais = window.document.querySelector('input#mora')
+            var resu = window.document.querySelector('div#resu')
+        if(pais.value == 'Brasil'){
+            resu.innerHTML = `Vc é brasileiro`
+        }
+        else{
+            resu.innerHTML = `Vc é estrangeiro`
+        }
+    }
+    </script>
+        </body>
+        </html>
+
+        

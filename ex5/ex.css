@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+}
+header{
+    background-image: linear-gradient(to bottom, purple, rgb(48, 0, 48) );
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+}
+div#area{
+    display: flex;
+    background-color: blueviolet;
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
