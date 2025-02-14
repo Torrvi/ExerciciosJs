@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ex.css">
+    
     <title>JavaScript</title>
 </head>
 <body>
-    <header><h1>Hora do dia</h1></header> 
+    <header><h1>Verificador de idade</h1></header> 
         <main>
             <section id="area">
-                <div>
-
-                </div>
-                <div>
-
-                </div>
+                <p id="corpo">Ano de Nascimento: <input type="number"  id="txtano"> <br>
+                    Sexo: 
+                    <input type="radio" name="radsex" id="masc" checked>
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="femi">
+                    <label for="femi">Feminino</label>
+                    <input type="button" value="Verificar" onclick="verificar()"> <br></p>
+                <div id="res">
+                    <p>Preencha os dados acima para obter um resultado.</div></p>
+                    <img id="foto" src="" alt="">
             </section>
         </main>
-    
+
     <footer>
         <p>&copy;Coelhozz24@gmail.com</p>
     </footer>
     </body>
     </html>
+    <script src="ex.js"></script>
+
     
-    <script src="ex.js">
-        
-       
-    </script>
 
         
