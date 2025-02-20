@@ -29,6 +29,9 @@ section#area{
 #flista{
     width: 150px;
 }
+div#margin{
+    margin: 30px;
+}
 footer{
     text-align: center;
     background-color: purple;
